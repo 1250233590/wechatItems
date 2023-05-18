@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://l.38088.cn/index/wechat?id=1353 -->
+<html style="font-size: 153.6px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jweixin-1.6.0.js"></script>
+    <title>新澳门133期</title>
+    <script>
+        wx.config({
+            debug: false
+            , appId: 'wx6050b56e8a0a209e'
+            , timestamp: '1684377284'
+            , nonceStr: 'V5psbJVMFZT7r7XK'
+            , signature: 'ae114fbe602510c6751bbf132c2ed0e47304c63e'
+            , jsApiList: ['updateAppMessageShareData', 'updateTimelineShareData']
+        });
+
+        wx.ready(function () {
+            wx.updateAppMessageShareData({
+                title: '新澳门133期'
+                , desc: '三中三：43-18-28\r\n三中三：36-19-39\r\n聊天记录'
+                , link: 'http://192.168.10.39:5500/index.html'
+                , imgUrl: '',
+            })
+
+            wx.updateTimelineShareData({
+                title: '新澳门133期'
+                , link: 'http://192.168.10.39:5500/index.html'
+                , imgUrl: '',
+            })
+        });
+    </script>
+    <style>
+        html, body {
+            height: 100%
+        }
+
+        body, * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            border: 0;
+            list-style-type: none
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 1.25rem
+        }
+
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #ffffff;
+            background-size: contain
+        }
+
+        #scroller {
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -o-text-size-adjust: none;
+            text-size-adjust: none;
+            webkit-transform: translate3d(0, 0, 0)
+        }
+
+        #scroller * {
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0)
+        }
+
+        img {
+            pointer-events: none;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            max-width: 100%;
+            max-height: auto !important
+        }
+
+
+
+
+        .fy_div {
+            margin: 0;
+            padding: 0;
+            background: white;
+            position: relative;
+        }
+
+        .time {
+            text-align: center;
+            color: #999999;
+            font-size: 12px;
+            width: 100%;
+        }
+
+        .content {
+            min-height: 100px;
+            margin: 5px 0;
+            width: 100%;
+        }
+
+        .content .left {
+            min-height: 51px;
+            float: left;
+            width: 16%;
+        }
+
+        .content .left .img {
+            width: 40px;
+            margin: 10px;
+        }
+
+        .content .right {
+            min-height: 50px;
+            float: right;
+            width: 84%;
+        }
+
+        .content .right .top .name {
+            float: left;
+            font-size: 12px;
+            color: #999999;
+            margin: 2px;
+        }
+
+        .content .right .top .addtime {
+            float: right;
+            font-size: 12px;
+            color: #999999;
+            margin: 2px 20px;
+        }
+
+        .content .right .contents {
+            font-size: 16px;
+            color: #000;
+            margin: 6px 10px 20px 2px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 2px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #eeeeee;
+        }
+
+
+        ._zzz_avatar {
+            border-radius: 4px;
+        }
+        ._zzz_hr:last-child {
+            display: none;
+        }
+        ._zzz_wrap_bottom_line {
+            margin: 0 auto;
+            width: 94%;
+            position: relative;
+            bottom: 43px;
+        }
+        ._zzz_wrap_dian {
+            background-color: #fff;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 10px;
+            position: absolute;
+            top: 0;
+            z-index: 999;
+            height: 10px;
+            left: 46%;
+        }
+        ._zzz_dian {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #e0e0e0;
+            text-align: center;
+            margin-bottom: -10px;
+        }
+    </style>
+    <script src="./js/flexible.js"></script>
+    <script type="text/javascript" src="./js/iscroll.min.js"></script>
+    <script type="text/javascript" src="./js/iscroll-zoom.min.js"></script>
+</head>
+<body onload="loadedjs()" style="font-size: 15px;">
+<div id="wrapper">
+    <div id="scroller" style="transform-origin: 0px 0px; transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) scale(1) translateZ(0px);">
+        <div class="container">
+            <div class="time">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td width="33%">
+                            <hr>
+                        </td>
+                        <td width="34%">2023年5月13日</td>
+                        <td width="33%">
+                            <hr>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="content">
+                <div class="left"><img class="img _zzz_avatar" src=""></div>
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">43-18-28</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">36-19-39</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">18-09-23</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">05-18-34</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">48-12-45</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">03-23-49</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">43-21-32</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">09-12-34</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">18-15-41</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">09-02-46</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">40-14-24</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">19-01-03</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">28-12-32</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">30-39-22</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">06-15-26</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">36-13-07</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">46-37-02</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">03-13-22</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">36-04-35</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">12-35-39</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">26-30-43</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">20-15-31</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">14-19-05</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">36-15-40</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">23-25-39</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">03-01-08</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">32-43-18</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">13-05-29</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">05-16-11</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">25-40-41</div>
+                    <hr style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                <div style="clear: both"></div>
+
+                            </div>
+            <div class="content">
+                <div class="left"><img class="img _zzz_avatar" src=""></div>
+                                <div class="right">
+                    <div class="top">
+                        <div class="name">三中三</div>
+                        <div class="addtime">-</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="contents">共计30组</div>
+                    <hr class="_zzz_hr" style="margin-right: 10px;margin-bottom: 20px;">
+                </div>
+                                <div style="clear: both"></div>
+            </div>
+            <div class="_zzz_wrap_bottom_line">
+                <hr>
+                <div class="_zzz_wrap_dian">
+                    <div class="_zzz_dian"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var myScroll;
+    function loadedjs() {
+        myScroll = new IScroll('#wrapper', {
+            scrollX: true,
+            freeScroll: true,
+            click: true,
+            zoom: true,
+            mouseWheel: true,
+            disablePointer: true,
+            disableTouch: false,
+            disableMouse: false
+        });
+    }
+</script>
+
+
+</body></html>
