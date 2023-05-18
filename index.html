@@ -10,26 +10,30 @@
         wx.config({
             debug: false
             , appId: 'wx6050b56e8a0a209e'
-            , timestamp: '1684377284'
-            , nonceStr: 'V5psbJVMFZT7r7XK'
-            , signature: 'ae114fbe602510c6751bbf132c2ed0e47304c63e'
+            , timestamp: '1684410782'
+            , nonceStr: 'Z5psbJVMFZT7r7XX'
+            , signature: 'be114fbe602510c6751bbf132c2ed0e47304c63'
             , jsApiList: ['updateAppMessageShareData', 'updateTimelineShareData']
         });
 
-        wx.ready(function () {
+        wx.ready(function (e) {
+            console.log('2,',e)
             wx.updateAppMessageShareData({
-                title: '新澳门133期'
-                , desc: '三中三：43-18-28\r\n三中三：36-19-39\r\n聊天记录'
-                , link: 'http://192.168.10.39:5500/index.html'
-                , imgUrl: '',
+                title: '新澳门133期', 
+                desc: '三中三：43-18-28\r\n三中三：36-19-39\r\n聊天记录', 
+                link: 'http://www.yzhweb.asia', 
+                imgUrl: './img/white.jpg',
             })
-
+            
             wx.updateTimelineShareData({
-                title: '新澳门133期'
-                , link: 'http://192.168.10.39:5500/index.html'
-                , imgUrl: '',
+                title: '新澳门133期', 
+                desc: '三中三：43-18-28\r\n三中三：36-19-39\r\n聊天记录', 
+                link: 'http://www.yzhweb.asia', 
+                imgUrl: './img/white.jpg',
             })
         });
+    
+        console.log('12312')
     </script>
     <style>
         html, body {
@@ -240,7 +244,7 @@
                         <div class="addtime">-</div>
                     </div>
                     <div style="clear:both;"></div>
-                    <div class="contents">12-02-38</div>
+                    <div class="contents">43-18-28</div>
                     <hr style="margin-right: 10px;margin-bottom: 20px;">
                 </div>
                 <div style="clear: both"></div>
